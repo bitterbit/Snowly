@@ -12,5 +12,6 @@ Preview
 ----------
 [Live preview](http://bitterb.it)  
 
-![home.jpg](https://raw.githubusercontent.com/bitterbit/Snowly/master/home_screenshot.png)
+![home.jpg](https://raw.githubusercontent.com/bitterbit/Snowly/master/home_screenshot.png)   
+
 ![snowly.png](https://bitbucket.org/repo/bn6RAr/images/1660362658-snowly.png)
