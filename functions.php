@@ -69,3 +69,29 @@ function twitter_url() {
 function total_articles() {
 	return Post::where(Base::table('posts.status'), '=', 'published')->count();
 }
+
+
+/*** ADDITIONS ***/
+
+function load_posts($limit=5) {
+	list($total, $posts) = Post::listing(null, 1, $per_page = $limit);
+
+	$posts = new Items($posts);
+	Registry::set('posts', $posts);
+	Registry::set('total_posts', $total);
+	Registry::set('page', "SOMTHING HERE");
+	Registry::set('page_offset', 1);
+
+	if ($total <= 0){
+		return null;
+	}
+
+	return $posts;
+}
+
+function shorten_article($html, $max_words=25) {
+	$text = strip_tags($html);
+	$words = implode(' ', array_slice(explode(' ', $text), 0, $max_words));
+	$words .= '...';
+	return $words;
+}
