@@ -10,7 +10,7 @@ Gal Tashma (Myself) continued developing this theme.
 
 Preview
 ----------
-[Live preview](http://bitterb.it)  
+[Live preview](http://www.galtashma.com)  
 
 ![home.jpg](https://raw.githubusercontent.com/bitterbit/Snowly/master/home_screenshot.png)   
 
